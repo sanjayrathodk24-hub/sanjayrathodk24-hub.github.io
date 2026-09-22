@@ -271,6 +271,20 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
+.btn-outline-accent {
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  color: #22d3ee;
+}
+
+.btn-outline-accent:hover {
+  background: rgba(6, 182, 212, 0.25);
+  border-color: #22d3ee;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-cyan);
+}
+
 .btn-block {
   width: 100%;
 }
@@ -499,15 +513,37 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.15rem;
   color: var(--text-secondary);
   line-height: 1.75;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   max-width: 580px;
+}
+
+.hero-contact-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.quick-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.quick-badge svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-secondary);
 }
 
 .hero-cta-group {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-tech-stack {
@@ -598,7 +634,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
   background: rgba(13, 17, 26, 0.95);
   font-family: var(--font-code);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.7;
   overflow-x: auto;
 }
@@ -802,28 +838,28 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.project-banner-mailnova {
-  background: linear-gradient(135deg, #312e81 0%, #1e1b4b 100%);
+.project-banner-leadcrm {
+  background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
 }
 
-.project-banner-beesop {
+.project-banner-onrole {
   background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
 }
 
-.project-banner-innrly {
-  background: linear-gradient(135deg, #164e63 0%, #083344 100%);
-}
-
-.project-banner-woo {
-  background: linear-gradient(135deg, #581c87 0%, #3b0764 100%);
-}
-
-.project-banner-automation {
+.project-banner-executive {
   background: linear-gradient(135deg, #701a75 0%, #4a044e 100%);
 }
 
-.project-banner-gateway {
-  background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
+.project-banner-sap {
+  background: linear-gradient(135deg, #581c87 0%, #3b0764 100%);
+}
+
+.project-banner-confido {
+  background: linear-gradient(135deg, #312e81 0%, #1e1b4b 100%);
+}
+
+.project-banner-cms {
+  background: linear-gradient(135deg, #164e63 0%, #083344 100%);
 }
 
 .project-badge {
@@ -1064,6 +1100,85 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.6rem;
   color: var(--text-secondary);
   font-size: 0.95rem;
+}
+
+/* --- Education Section --- */
+.education-card {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.education-icon-wrapper {
+  font-size: 3rem;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: var(--radius-md);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.education-degree {
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.education-university {
+  font-size: 1.05rem;
+  color: var(--accent-secondary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.education-year {
+  display: inline-block;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.education-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* --- Key Achievements Grid --- */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.achievement-icon {
+  font-size: 2rem;
+}
+
+.achievement-card h4 {
+  font-size: 1.15rem;
+  color: #ffffff;
+}
+
+.achievement-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 /* --- Contact Section --- */
@@ -1464,6 +1579,10 @@ h1, h2, h3, h4, h5, h6 {
   .skills-matrix-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1505,6 +1624,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-links {
