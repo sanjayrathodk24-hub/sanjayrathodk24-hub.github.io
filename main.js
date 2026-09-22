@@ -46,21 +46,23 @@ const projectData = {
     highlights: "Active production usage by 200+ employees across 3 organizations; reduced manual HR overhead by 40%."
   },
   executive_advertising: {
-    title: "The Executive Advertising — Web-to-Print Studio",
-    subtitle: "Interactive Browser-Based Design Tool using Fabric.js & PHP",
-    description: "Developed an interactive browser-based graphic customization tool that enables non-technical business users to design and order print-ready promotional materials and branded merchandise.",
+    title: "The Executive Advertising (executiveadvertising.com)",
+    subtitle: "Custom Promotional E-Commerce & Interactive Canvas Studio (Devdigital)",
+    description: "Executive Advertising is a high-traffic e-commerce and branded merchandise platform developed under Devdigital Vadodara Pvt. Ltd. Engineered a browser-based graphic customization tool enabling users to compose promotional designs, preview logos in real time, and generate print-ready vector artwork across thousands of catalog products.",
     architecture: [
       "Built high-performance interactive canvas manipulation engine with Fabric.js.",
       "Optimized canvas rendering and texture caching for high-resolution graphics, slashing load times by 50%.",
       "Implemented lazy loading, SVG vector parsing, and lossy/lossless asset compression pipelines.",
-      "Built backend PHP service to convert canvas JSON states into high-DPI print-ready PDF/CMYK exports."
+      "Built backend PHP service to convert canvas JSON states into high-DPI print-ready PDF/CMYK exports.",
+      "Integrated with high-volume promotional merchandise product databases and custom checkout workflows."
     ],
-    tech: ["Fabric.js", "PHP", "HTML5 Canvas", "JavaScript", "ImageMagick", "MySQL"],
-    highlights: "Reduced canvas rendering load times by 50% for complex multi-layered print graphics."
+    tech: ["Fabric.js", "PHP", "HTML5 Canvas", "JavaScript", "ImageMagick", "MySQL", "E-Commerce"],
+    highlights: "Flagship Devdigital project; reduced canvas rendering load times by 50% and powers high-volume online merchandise sales.",
+    liveUrl: "https://www.executiveadvertising.com/"
   },
   saptraininghub: {
     title: "SAPTrainingHub.com — E-Learning & E-Commerce",
-    subtitle: "WordPress & WooCommerce Course Marketplace Platform",
+    subtitle: "Custom WordPress & WooCommerce Course Marketplace Platform",
     description: "Engineered an e-learning platform featuring dynamic course catalogues, subscription management, student enrollment flows, and multi-currency checkout.",
     architecture: [
       "Custom WooCommerce integration tailored for digital course purchases and recurring subscriptions.",
@@ -69,7 +71,8 @@ const projectData = {
       "Engineered SEO architecture and structured metadata, driving significant organic search visibility."
     ],
     tech: ["WordPress", "WooCommerce", "PHP", "MySQL", "Stripe Gateway", "SEO Architecture"],
-    highlights: "Full-lifecycle delivery with subscription monetization, seamless course checkout, and high SEO rankings."
+    highlights: "Full-lifecycle delivery with subscription monetization, seamless course checkout, and high SEO rankings.",
+    liveUrl: "https://saptraininghub.com/"
   },
   confidosoft_enterprise: {
     title: "Confidosoft Enterprise Laravel & AWS Architecture",
