@@ -11,13 +11,13 @@ Results-driven engineering leader dedicated to **helping people and businesses a
 
 ---
 
-## 🛠️ Core Competencies
-- **Custom WordPress Architecture**: Bespoke theme development from scratch, custom Gutenberg blocks, WooCommerce, custom post types, zero page-builder bloat.
-- **Modern Frontend**: Modern JavaScript (ES6+), HTML5 semantic markup, CSS3, Tailwind CSS, responsive mobile-first interfaces.
-- **Backend & Database**: PHP 8+, Laravel, MySQL query tuning & schema indexing, PostgreSQL, RESTful API design.
-- **Marketing Tech & Integrations**: HubSpot, Salesforce REST API, Google Analytics / GTM, Stripe & PayPal payment gateways.
-- **DevOps & Cloud**: WP Engine, AWS (EC2, S3), Docker, Git branching workflows, CI/CD pipelines.
-- **Engineering Leadership**: Team leadership (7-10 devs), code review governance, sprint planning, 1-on-1 mentorship, cross-functional collaboration.
+## 🚀 Key Featured Projects & Live Architectures
+- **Guru99.com** *(Global High-Traffic WordPress)*: Custom WordPress engineering for one of the world's largest online tech education portals, serving millions of monthly active users across 30+ languages with sub-second page performance.
+- **SAPTrainingHub.com** *(Custom WordPress + WooCommerce)*: Bespoke e-learning & course subscription platform with LMS progress tracking and SEO architecture.
+- **LeadCRM Dashboard** *(Laravel + Salesforce REST API)*: Real-time CRM synchronization with optimized batching pipelines (40% sync latency reduction).
+- **OnRole HRMS** *(Custom PHP Architecture)*: Operations & automated payroll suite serving 200+ employees across 3 client organizations (40% HR overhead saved).
+- **The Executive Advertising Studio** *(Fabric.js + Custom PHP)*: Interactive web-to-print design tool with 50% canvas rendering speedup.
+- **Confidosoft Enterprise Solutions** *(Laravel + AWS EC2/S3)*: Enterprise cloud architectures with microservices, Redis caching, and team mentorship (7-10 devs).
 
 ---
 

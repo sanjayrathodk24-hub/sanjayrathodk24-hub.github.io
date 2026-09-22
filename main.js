@@ -2,8 +2,23 @@
  * Sanjay Rathod Developer Portfolio - Interactivity & Resume Data Logic
  */
 
-// --- Project Architectural Deep-Dives from Resume ---
+// --- Project Architectural Deep-Dives from Resume & Portfolio ---
 const projectData = {
+  guru99: {
+    title: "Guru99.com — Global Tech Tutorial & Review Platform",
+    subtitle: "High-Traffic Custom WordPress Architecture Serving Millions of Monthly Tech Professionals",
+    description: "Guru99 is one of the world's most widely visited tech education platforms, delivering free, structured tutorials across 30+ international languages. Contributed to core PHP and WordPress development, custom taxonomy structuring, and resolving critical site performance bottlenecks.",
+    architecture: [
+      "Engineered custom WordPress theme and modular template components with zero page-builder overhead.",
+      "Optimized high-concurrency MySQL database queries and composite indices to handle massive read traffic spikes.",
+      "Implemented multi-tier caching architectures (server-side object caching, HTML transient caching, and CDN asset prefetching).",
+      "Integrated multilingual hreflang SEO routing and structured Schema.org markup for global discoverability.",
+      "Optimized Core Web Vitals and programmatic ad scripts to maximize user retention and sub-second page rendering."
+    ],
+    tech: ["Custom WordPress", "PHP 8", "MySQL Tuning", "Object Caching", "Cloudflare CDN", "JavaScript", "Multilingual SEO"],
+    highlights: "Maintains 99.99% availability serving millions of global visits monthly with sub-second page response times.",
+    liveUrl: "https://www.guru99.com/"
+  },
   leadcrm: {
     title: "LeadCRM Dashboard — Laravel & Salesforce API",
     subtitle: "Enterprise CRM with Real-Time Salesforce Data Synchronization",
@@ -214,6 +229,17 @@ function initProjectModals() {
             <strong style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Core Technologies:</strong>
             <div class="project-tech-tags">${techBadges}</div>
           </div>
+
+          ${data.liveUrl ? `
+          <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+            <a href="${data.liveUrl}" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              <span>Visit Live Website</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+              </svg>
+            </a>
+          </div>` : ''}
         `;
 
         modal.classList.add("open");

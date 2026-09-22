@@ -838,6 +838,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--border-subtle);
 }
 
+.project-banner-guru99 {
+  background: linear-gradient(135deg, #065f46 0%, #064e3b 50%, #022c22 100%);
+}
+
 .project-banner-leadcrm {
   background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
 }
